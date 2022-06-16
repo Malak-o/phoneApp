@@ -28,7 +28,7 @@ export default function App() {
       keyboardShouldPersistTaps='handled'>
 
         <View style={styles.taskWrapper}>
-          <Text style={styles.sectionTitle}>Tasks of the Day</Text>
+          <Text style={styles.sectionTitle}>Tasks of the Day: </Text>
           <View style={styles.items}>
             {
               taskItems.map((item, index) => {
@@ -44,7 +44,7 @@ export default function App() {
       </ScrollView>
 
       <KeyboardAvoidingView
-      /*anpassar appen efter plattform dvs. så inte tangetbordet täcker tasksen.*/
+      /*anpassar appen efter plattform. så tangetbordet inte täcker tasksen.*/
       behavior={Platform.OS === "ios" ? "padding" : "height" }
       style={styles.writeTaskWrapper}>
         <TextInput style={styles.input} placeholder={'Add new task'} value={task} onChangeText={text => setTask(text)}/>
@@ -62,7 +62,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#D2D4BA',
+    backgroundColor: '#EAF0AA',
   },
   taskWrapper: {
     paddingTop: 80,
