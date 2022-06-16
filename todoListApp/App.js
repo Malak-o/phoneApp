@@ -58,11 +58,11 @@ export default function App() {
     </View>
   );
 }
-
+/* styles */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8EAED',
+    backgroundColor: '#D2D4BA',
   },
   taskWrapper: {
     paddingTop: 80,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     backgroundColor: '#FFF',
     borderRadius: 60,
-    borderColor: '#C0C0C0',
+    borderColor: '#75756B',
     borderWidth: 1,
     width: 250,
   },
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#C0C0C0',
+    borderColor: '#75758B',
     borderWidth: 1,
   },
   addText: {},
