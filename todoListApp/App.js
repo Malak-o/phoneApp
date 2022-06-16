@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Keyboard, KeyboardAvoidingView, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Task from './components/task';
@@ -6,6 +5,8 @@ import Task from './components/task';
 export default function App() {
   const [task, setTask] = useState();
   const [taskItems, setTaskItems] = useState([]);
+
+
   const handleAddTask = () => {
     Keyboard.dismiss();
     setTaskItems([...taskItems, task])
@@ -15,7 +16,7 @@ export default function App() {
   const completeTask = (index) => {
     let itemsCopy = [...taskItems];
     itemsCopy.splice(index, 1);
-    setTaskItems(intemsCopy)
+    setTaskItems(itemsCopy)
   }
 
   return (
